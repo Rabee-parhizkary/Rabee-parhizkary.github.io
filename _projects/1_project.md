@@ -1,18 +1,22 @@
 ---
 layout: page
-title: Network Traffic Transformer
-description: Transformer architecture to learn network dynamics.
+title: Autoencoder-based conditional optimal transport generative
+adversarial network for medical image generation
 img: assets/img/architecture_ntt.webp
 importance: 1
 category: Research
 ---
 
-<p align="justify"> Learning underlying network dynamics from packet-level data has been deemed an extremely difficult task, to the point that it is practically not attempted. While research has shown that machine learning (ML) models can be used to learn behaviour and improve on some specific tasks in the networking domain, these models do not generalize to any other tasks. However, a new ML model called the ,<i> Transformer </i>  has shown massive generalization abilities in several fields, where the model is pre-trained on large datasets, in a task agnostic fashion and fine-tuned on smaller datasets for task specific applications, and has become the state-of-the-art architecture for machine learning generalization. </p>
-
-<p align="justify"> This project presents a new Transformer architecture adapted for the networking domain, the Network Traffic Transformer (NTT), which is designed to learn network dynamics from packet traces. We pre-train our NTT to learn fundamental network dynamics and then, leverage this learnt behaviour to fine-tune to specific network applications in a quick and efficient manner. By learning such dynamics in the network, the NTT can then be used to make more network-aware decisions across applications, make improvements to the same and make the networks of tomorrow, more efficient and reliable. </p>
-
-Implementation of entire project can be found here: <a href="https://github.com/Siddhant-Ray/Network-Traffic-Transformer"> Code </a>
-
+<p align="justify"> We proposed an autoencoder-based GAN model for generating synthetic retina images. Our model
+has three steps: We used the model proposed in Autoencoder-based conditional optimal transport generative adversarial network for medical image
+generation by Wang(2024) with the additional step of encoding binary vessel trees independently and then generating retina images with these latent codes.
+The process starts by detecting and segmenting the blood vessels in the retinal images, producing a
+binary vessel tree. This segmentation is achieved using a U-Net-based convolutional neural network
+(CNN), which is particularly well-suited for biomedical image segmentation tasks. U-Net consists
+of downsampling and upsampling blocks that allow precise spatial localization of features while
+preserving coarse-level structures. For more details of this process, you can see towards adversarial retinal image synthesis by Costa(2017).
+Once the vessel trees are detected, the method uses an Autoencoder to translate these binary vessel
+trees into latent code.
 
 
 
