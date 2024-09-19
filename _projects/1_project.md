@@ -1,13 +1,11 @@
 ---
 layout: page
 title: Autoencoder-based conditional optimal transport generative adversarial network for medical image generation
+image: assets/img/architecture.png.jpg
 importance: 1
 category: Research
 ---
 
-<div style="text-align: center;">
-  <img src="assets/img/architecture.png" alt="architecture" style="width:100%; max-width:600px;">
-</div>
 
 <p align="justify"> 
   We proposed an autoencoder-based GAN model for generating synthetic retina images. Our model
