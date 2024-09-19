@@ -2,8 +2,6 @@
 layout: page
 title: Autoencoder-based conditional optimal transport generative adversarial network for medical image generation
 img: assets/img/architecture.png
-<img src="assets/img/architecture.png" alt="architecture" style="width:100%; max-width:600px;">
-
 importance: 1
 category: Research
 ---
