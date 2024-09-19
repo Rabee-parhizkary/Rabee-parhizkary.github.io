@@ -16,7 +16,7 @@ binary vessel tree. This segmentation is achieved using a U-Net-based convolutio
 of downsampling and upsampling blocks that allow precise spatial localization of features while
 preserving coarse-level structures. For more details of this process, you can see towards adversarial retinal image synthesis by Costa(2017).
 Once the vessel trees are detected, the method uses an Autoencoder to translate these binary vessel
-trees into latent code.
+trees into latent code. </p>
 
 
 
