@@ -2,6 +2,8 @@
 layout: page
 title: Autoencoder-based conditional optimal transport generative adversarial network for medical image generation
 img: assets/img/architecture.png
+<img src="assets/img/architecture.png" alt="architecture" style="width:100%; max-width:600px;">
+
 importance: 1
 category: Research
 ---
@@ -15,7 +17,7 @@ binary vessel tree. This segmentation is achieved using a U-Net-based convolutio
 of downsampling and upsampling blocks that allow precise spatial localization of features while
 preserving coarse-level structures. For more details of this process, you can see towards adversarial retinal image synthesis by Costa(2017).
 Once the vessel trees are detected, the method uses an Autoencoder to translate these binary vessel
-trees into latent code. </p>
+trees into latent code. Currently, I'm working on finding an algorithm to determine the threshold for clipping singular values(You can see the exact problem in the Autoencoder-based conditional optimal transport generative adversarial network for medical image generation paper's future works.) </p>
 
 
 
