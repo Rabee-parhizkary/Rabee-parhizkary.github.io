@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Orientation Selectivity model
+image: assets/img/Slide15.jpg
 importance: 2
 category: Research
 ---
