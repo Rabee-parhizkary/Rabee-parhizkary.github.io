@@ -3,12 +3,12 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Siddhant
+first_name: Rabee
 middle_name:
-last_name: Ray
-email: siddhant.r98@gmail.com
+last_name: Parhizkary
+email: Rabee.Parhizkary425@shaif.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Siddhant Ray's academic website.
+  B.Sc. of Computer Science at Department of Mathematical Sciences, Sharif University of Technology
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
