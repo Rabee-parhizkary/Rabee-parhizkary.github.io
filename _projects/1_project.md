@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Autoencoder-based conditional optimal transport generative
-adversarial network for medical image generation
+title: Autoencoder-based conditional optimal transport generative adversarial network for medical image generation
 img: assets/img/architecture_ntt.jpg
 importance: 1
 category: Research
