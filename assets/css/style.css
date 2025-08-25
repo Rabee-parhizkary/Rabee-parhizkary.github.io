@@ -869,12 +869,16 @@ main {
 
 
 
-
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
 
-.filter-list { display: none; }
+/* فیلترها قابل مشاهده */
+.filter-list { 
+  display: flex; 
+  gap: 15px; 
+  margin-bottom: 20px;
+}
 
 .filter-select-box {
   position: relative;
@@ -882,34 +886,36 @@ main {
 }
 
 .filter-select {
-  background: var(--eerie-black-2);
-  color: var(--light-gray);
+  background: var(--eerie-black-2, #222);
+  color: var(--light-gray, #ccc);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid var(--jet);
+  border: 1px solid var(--jet, #333);
   border-radius: 14px;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-size: var(--fs-6, 14px);
+  font-weight: var(--fw-300, 300);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
 
 .select-list {
-  background: var(--eerie-black-2);
+  background: var(--eerie-black-2, #222);
   position: absolute;
   top: calc(100% + 6px);
   width: 100%;
   padding: 6px;
-  border: 1px solid var(--jet);
+  border: 1px solid var(--jet, #333);
   border-radius: 14px;
   z-index: 2;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: 0.15s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .filter-select.active + .select-list {
@@ -919,18 +925,25 @@ main {
 }
 
 .select-item button {
-  background: var(--eerie-black-2);
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  background: var(--eerie-black-2, #222);
+  color: var(--light-gray, #ccc);
+  font-size: var(--fs-6, 14px);
+  font-weight: var(--fw-300, 300);
   text-transform: capitalize;
   width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  transition: background 0.2s ease;
 }
 
-.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
+.select-item button:hover { 
+  background: hsl(240, 2%, 20%);
+}
 
+/* پروژه‌ها */
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -950,7 +963,7 @@ main {
   100% { transform: scale(1); }
 }
 
-.project-item > a { width: 100%; }
+.project-item > a { width: 100%; display: block; }
 
 .project-img {
   position: relative;
@@ -970,16 +983,15 @@ main {
   height: 100%;
   background: transparent;
   z-index: 1;
-  transition: var(--transition-1);
+  transition: all 0.3s ease;
 }
 
 .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
 .project-item-icon-box {
   --scale: 0.8;
-
-  background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  background: var(--jet, #333);
+  color: var(--orange-yellow-crayola, #ffb347);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -989,7 +1001,7 @@ main {
   border-radius: 12px;
   opacity: 0;
   z-index: 1;
-  transition: var(--transition-1);
+  transition: all 0.3s ease;
 }
 
 .project-item > a:hover .project-item-icon-box {
@@ -1003,7 +1015,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: var(--transition-1);
+  transition: all 0.3s ease;
 }
 
 .project-item > a:hover img { transform: scale(1.1); }
@@ -1012,20 +1024,20 @@ main {
 .project-category { margin-left: 10px; }
 
 .project-title {
-  color: var(--white-2);
-  font-size: var(--fs-5);
-  font-weight: var(--fw-400);
+  color: var(--white-2, #fff);
+  font-size: var(--fs-5, 16px);
+  font-weight: var(--fw-400, 400);
   text-transform: capitalize;
   line-height: 1.3;
 }
 
 .project-category {
-  color: var(--light-gray-70);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  color: var(--light-gray-70, #aaa);
+  font-size: var(--fs-6, 14px);
+  font-weight: var(--fw-300, 300);
 }
 
-
+/* رنگ‌بندی دسته‌بندی‌ها */
 .project-category[data-category="image processing"] {
   color: #7ec4ff;
 }
@@ -1037,7 +1049,6 @@ main {
 .project-category[data-category="statistical signal processing"] {
   color: #ffd37e;
 }
-
 
 /*-----------------------------------*\
   #BLOG
