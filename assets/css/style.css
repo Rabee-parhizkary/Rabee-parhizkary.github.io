@@ -870,7 +870,6 @@ main {
 
 
 
-
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -1027,7 +1026,17 @@ main {
 }
 
 
+.project-category[data-category="image processing"] {
+  color: #7ec4ff;
+}
 
+.project-category[data-category="machine learning"] {
+  color: #90ffae;
+}
+
+.project-category[data-category="statistical signal processing"] {
+  color: #ffd37e;
+}
 
 
 /*-----------------------------------*\
