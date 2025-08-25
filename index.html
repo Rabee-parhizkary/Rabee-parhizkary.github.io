@@ -508,95 +508,242 @@
   </section>
 
 </article>
+        
+      <!--
+        - #PORTFOLIO
+      -->
 
+      <article class="portfolio" data-page="portfolio">
 
-<!--
-  - #PORTFOLIO
--->
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
 
-<article class="portfolio" data-page="portfolio">
+        <section class="projects">
 
-  <header>
-    <h2 class="h2 article-title">Portfolio</h2>
-  </header>
+          <ul class="filter-list">
 
-  <section class="projects">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
 
-    <ul class="filter-list">
-      <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-      <li class="filter-item"><button data-filter-btn>Image Processing</button></li>
-      <li class="filter-item"><button data-filter-btn>Machine Learning</button></li>
-      <li class="filter-item"><button data-filter-btn>Statistical Signal Processing</button></li>
-    </ul>
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
 
-    <div class="filter-select-box">
-      <button class="filter-select" data-select>
-        <div class="select-value" data-selecct-value>Select category</div>
-        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
-      </button>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
 
-      <ul class="select-list">
-        <li class="select-item"><button data-select-item>All</button></li>
-        <li class="select-item"><button data-select-item>Image Processing</button></li>
-        <li class="select-item"><button data-select-item>Machine Learning</button></li>
-        <li class="select-item"><button data-select-item>Statistical Signal Processing</button></li>
-      </ul>
-    </div>
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
 
-    <ul class="project-list">
+          </ul>
 
-      <!-- 3D Computer Vision -->
-      <li class="project-item active" data-filter-item data-category="image processing">
-        <a href="https://github.com/Rabee-parhizkary/A-Compact-Embedding-for-Facial-Expression-Similarity" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-            <img src="./assets/images/project-1.jpg" alt="3D Computer Vision" loading="lazy">
-          </figure>
-          <h3 class="project-title">3D Computer Vision</h3>
-          <p class="project-category">Image Processing</p>
-        </a>
-      </li>
+          <div class="filter-select-box">
 
-      <!-- Traffic Project -->
-      <li class="project-item active" data-filter-item data-category="machine learning">
-        <a href="https://github.com/Rabee-parhizkary/Most-traveled-cities-in-Nowroz" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-            <img src="./assets/images/project-2.jpg" alt="Traffic Analysis" loading="lazy">
-          </figure>
-          <h3 class="project-title">Traffic Analysis (Nowrouz Travel)</h3>
-          <p class="project-category">Machine Learning</p>
-        </a>
-      </li>
+            <button class="filter-select" data-select>
 
-      <!-- Digikala Project -->
-      <li class="project-item active" data-filter-item data-category="machine learning">
-        <a href="https://github.com/Rabee-parhizkary/Digikala_most_saled" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-            <img src="./assets/images/project-3.jpg" alt="Digikala Consumer Analysis" loading="lazy">
-          </figure>
-          <h3 class="project-title">Digikala Consumer Analysis</h3>
-          <p class="project-category">Machine Learning</p>
-        </a>
-      </li>
+              <div class="select-value" data-selecct-value>Select category</div>
 
-      <!-- Cortical Orientation Selectivity -->
-      <li class="project-item active" data-filter-item data-category="statistical signal processing">
-        <a href="#" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-            <img src="./assets/images/project-4.jpg" alt="Cortical Orientation Selectivity" loading="lazy">
-          </figure>
-          <h3 class="project-title">Cortical Orientation Selectivity Models</h3>
-          <p class="project-category">Statistical Signal Processing</p>
-        </a>
-      </li>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
 
-    </ul>
+            </button>
 
-  </section>
-</article>
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
 
@@ -790,49 +937,6 @@
 
       </article>
 
-<li class="blog-post-item">
-  <a href="https://github.com/username/project1" target="_blank">
-
-    <figure class="blog-banner-box">
-      <img src="./assets/images/github-project.png" alt="Project 1" loading="lazy">
-    </figure>
-
-    <div class="blog-content">
-      <div class="blog-meta">
-        <p class="blog-category">Python</p>
-        <span class="dot"></span>
-        <time datetime="2025-08-24">Aug 24, 2025</time>
-      </div>
-      <h3 class="h3 blog-item-title">Facial Expression Recognition</h3>
-      <p class="blog-text">
-        Implemented a deep learning model for emotion recognition using CNNs.  
-        <b>Tech stack:</b> Python, PyTorch, OpenCV
-      </p>
-    </div>
-  </a>
-</li>
-<div class="mini-blog">
-  <h3 class="h3">Quick Updates</h3>
-  <ul>
-    <li><time datetime="2025-08-20">Aug 20, 2025</time> – Started working on trajectory forecasting project (CCTP-Net).</li>
-    <li><time datetime="2025-08-10">Aug 10, 2025</time> – Published a new repo on GitHub: Traffic Data Analysis.</li>
-  </ul>
-</div>
-<canvas id="langChart"></canvas>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx = document.getElementById('langChart');
-  new Chart(ctx, {
-    type: 'pie',
-    data: {
-      labels: ['Python', 'C++', 'JavaScript'],
-      datasets: [{
-        data: [60, 25, 15],
-        backgroundColor: ['#3572A5', '#f34b7d', '#f1e05a']
-      }]
-    }
-  });
-</script>
 
 
 
@@ -850,7 +954,7 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://maps.app.goo.gl/3AidnFZH7BKaSnAd6"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
@@ -903,3 +1007,7 @@
 </body>
 
 </html>
+
+
+
+
