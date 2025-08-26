@@ -19,7 +19,6 @@ sidebarBtn.addEventListener("click", function () {
 
 
 
-
 // modal toggle function
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
